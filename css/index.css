@@ -1,1 +1,196 @@
-ECHO est  activado.
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px;
+}
+
+a:hover {
+    /* text-decoration: underline; */
+    border: 1px solid rgb(3, 3, 3);
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+body,
+
+#banner, button {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(233, 227, 238);
+    }
+
+#nav1 {
+    background: rgba(195, 195, 195, 0.87);
+    text-align: right;
+    padding: 11px;
+}
+
+#nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(195, 195, 195, 0.87);
+    text-align: left;
+    padding: 12px;
+}
+
+#nav2 .logo {
+    height: 60px;
+}
+
+#banner {
+    text-align: center;
+    padding: 80px;
+    background-image: url(https://placeimg.com/1000/300/tech);
+    color: rgb(255, 255, 255);
+}
+
+#banner h1,
+#banner button {
+    margin: 12px;
+}
+
+#banner button {
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 3px;
+    padding: 12px 24px;  
+}
+
+#banner h1 {
+    font-size: 60px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#banner .overlay {
+    background: rgba(255, 245, 245, 0.4);
+}
+
+#item { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 48px;
+    background: rgb(197, 61, 61);
+    
+}
+
+#item .item-product {
+    width: 24%;
+    text-align: center;
+    border: 1px solid #999;
+    margin: 12px auto;
+}
+
+
+#item .item-product img {
+    width: 100%;
+}
+
+#item .item-product p { 
+    margin: 12px;
+    line-height: 32px;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+ .tachado {
+    text-decoration: line-through;
+    font-weight: bold;
+    text-align: center;
+ }
+
+ .negrita {
+    font-weight: bold;
+    text-align: center;
+ }
+
+ .precio-final { 
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+ }
+
+ .descuento {
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.tachado,
+.precio-final,
+.descuento {
+    display: block;
+}
+
+.paginacion {
+    border: none;
+    padding: 12px 48px;
+    background: goldenrod;
+}
+
+.paginacion:hover {
+    font-weight: bold;
+    box-shadow: gray 3px 3px 6px;
+}
+#footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    background: lightgray;
+}
+
+#nav2 .second-nav-menu {
+    background: rgba(195, 195, 195, 0.87);
+}
+
+#nav2 .second-nav-links {
+    background: rgba(195, 195, 195, 0.87);
+}
+
+@media screen and (max-width: 425px) {
+    #nav2 .logo {
+        height: 36px;
+    }
+
+    #nav2 .second-nav-menu {
+        position: relative;
+    }
+
+    #nav2 .second-nav-links {
+        display: none;
+        position: absolute;
+        top: 36px;
+        right: 0px;
+        background:rgba(195, 195, 195, 0.87);
+    }
+
+    #nav2 .second-nav-hamburger {
+        border: 1px solid gray;
+        text-align: center;
+    }
+
+    #nav2 .second-nav-hamburger:hover + .second-nav-links {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    #banner {
+        display: none;
+    }
+
+    #items { 
+        padding: 12px;
+    }
+
+    #items .item-product {
+        width: 100%;
+    }
+}
