@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
     <style type="text/css">
         *{
             margin: 0;
             padding: 0;
         }
         div {
-            background: lightgray;
-            margin: 12px;    
+            background: rgb(253, 253, 253);
+            margin: 12px;  
         }
         #nav1 {
             text-align: right;
-            padding: 12px;
+            padding: 11px;
         }
         #nav2 {
             padding: 12px;
@@ -27,58 +30,93 @@
         #banner {
             text-align: center;
             padding: 80px;
-            background-color: rgb(45, 60,100);
-
+            background-color: rgb(255, 255, 255);
         }
-        #banner h1,
-        #banner button {
-            margin: 12px;
-        }
-        #items{
+       
+        #item{
             display: flex;
             justify-content: space-evenly;
+            padding: 12px;
         } 
-        #items div {
+        #item div {
             margin: 12px;
             width: 20%;
             text-align: center;
+            align-items: center;
         } 
-        #items div img {
+        #item div img {
             width: 100%;
-        }
+        }  
+
+
     </style>
 </head>
 <body>
     <div id="nav1">
-      Sign in or create an account  
+      <a href="#footer">Sign in</a>
+      or
+      <a href="#footer">create an account</a>
     </div>
+    
     <div id="nav2">
-        <img src="logo de google.png" alt="">
-    </div>
-    <div id="banner">
-        <h1>Lorem Ipsum</h1>
-            <button>Learn More</button>
-    </div>
-    <div id="items">
-        <div>
-            <img src="logo de google.png" alt="">
-            <caption>Product category one</caption>   
-        </div>
-        <div>
-            <img src="logo de google.png" alt="">
-            <caption>Product category one</caption>   
-        </div>
-        <div>
-            <img src="logo de google.png" alt="">
-            <caption>Product category one</caption>   
-        </div>
-        <div>
-            <img src="logo de google.png" alt="">
-            <caption>Product category one</caption>   
+        <img class="logo" src="logodegoogle.png" alt="Logo Google" />
+
+        <div class="second-nav-menu">
+            <div class="second-nav-links">
+                <a href="#home">Home</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#home">Home</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
         </div>
     </div>
-<div> 
-    Lorem Ipsum
-</div>
+
+     <div id="banner">
+            <div class="overlay">
+                <h1>Lorem Ipsum</h1>
+                <button>Learn More</button>
+            </div>            
+     </div>
+
+     <div id="item">
+         <div class="item-product">
+            <img src="https://placeimg.com/400/400/arch)" alt="">
+             <p>$4000</p>        
+        </div>
+         <div class="item-product">
+            <img src="https://placeimg.com/400/400/arch)" alt="">
+            <p>Producto 1</p>
+         </div>
+         <div class="item-product">
+            <img src="https://placeimg.com/400/400/arch)" alt="">
+                <p><span class="precio-final">$18000</span></p>
+         </div>
+         <div class="item-product">
+            <img src="https://placeimg.com/400/400/arch)" alt="">
+            <p>
+                <span class="tachado">$27000</span>
+                <span class="precio-final">$20.000</span>
+                <span class="descuento">15% OFF</span>
+            </p>
+         </div>
+
+         <div class="paginacion">
+            Ver mas productos
+        </div>
+    
+    </div>
+
+
+     
+    <div id="footer">
+            Lorem Ipsum
+    </div>
+    
+   
+   
 </body>
 </html>
